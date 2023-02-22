@@ -22,8 +22,6 @@
 
     &::before,
     &::after {
-      content: '';
-      position: absolute;
       width: 44.66px;
       height: 103.33px;
       filter: blur(25px);

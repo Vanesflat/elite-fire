@@ -19,8 +19,6 @@
       font-size: 0;
 
       &::after {
-        content: '';
-        position: absolute;
         top: -25%;
         left: -35%;
         z-index: -1;
