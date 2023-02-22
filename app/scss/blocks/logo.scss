@@ -1,0 +1,16 @@
+.logo {
+  font-family: 'Scania-Sans-CY--Headline-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 70px;
+  text-transform: uppercase;
+  letter-spacing: .105em;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $ligth-grey;
+  }
+
+  &--big {
+    font-size: 20px;
+  }
+}
