@@ -1,0 +1,39 @@
+.menu {
+
+  .menu__list {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    font-size: 13px;
+    color: $ligth-grey;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  .menu__item {
+    transition: all .3s ease;
+
+    &--phone {
+      position: relative;
+      margin-left: 15px;
+      font-size: 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -25%;
+        left: -35%;
+        z-index: -1;
+        width: 74px;
+        height: 67px;
+        background: rgba(201, 115, 53, 0.68);
+        border-radius: 500px;
+        filter: blur(50px);
+      }
+    }
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
