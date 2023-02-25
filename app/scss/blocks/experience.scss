@@ -1,0 +1,27 @@
+.experience {
+
+  .experience__title {
+    margin-bottom: 45px;
+    background: linear-gradient(184deg, #FFFFFF 31.8%, rgba(255, 255, 255, 0) 87.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -text-fill-color: transparent;
+  }
+
+  .experience__box {
+    margin-bottom: 90px;
+  }
+
+  .experience__gallery {
+    display: flex;
+    gap: 42px;
+  }
+
+  .experience__img {
+    width: 370px;
+    height: 267px;
+    background-color: $black;
+    border-radius: 2px;
+  }
+}
