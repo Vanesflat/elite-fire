@@ -31,7 +31,6 @@ body {
   line-height: 1.6;
   color: $white;
   background: #262626 url('../images/body-bg.png');
-  overflow: hidden;
 }
 
 a {
@@ -59,10 +58,9 @@ button {
 
 .wrapper {
   min-height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .main {
@@ -82,6 +80,8 @@ button {
 //sections
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
+@import "blocks/features.scss";
+@import "blocks/refueling.scss";
 
 //blocks
 @import "blocks/logo.scss";
