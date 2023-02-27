@@ -1,0 +1,99 @@
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].custom-range {
+  width: 410px;
+  -webkit-appearance: none;
+}
+
+/*progress support*/
+input[type=range].custom-range.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 30px + var(--ratio) * (100% - 30px));
+}
+
+/*webkit*/
+input[type=range].custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background: #FFCF7A;
+  border: none;
+  box-shadow: none;
+  margin-top: calc(2px * 0.5 - 30px * 0.5);
+}
+
+input[type=range].custom-range::-webkit-slider-runnable-track {
+  height: 2px;
+  border: none;
+  border-radius: 0;
+  background: #646464;
+  box-shadow: none;
+}
+
+input[type=range].custom-range.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(#FFCF7A, #FFCF7A) 0/var(--sx) 100% no-repeat, #646464;
+}
+
+/*mozilla*/
+input[type=range].custom-range::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background: #FFCF7A;
+  border: none;
+  box-shadow: none;
+}
+
+input[type=range].custom-range::-moz-range-track {
+  height: 2px;
+  border: none;
+  border-radius: 0;
+  background: #646464;
+  box-shadow: none;
+}
+
+input[type=range].custom-range.slider-progress::-moz-range-track {
+  background: linear-gradient(#FFCF7A, #FFCF7A) 0/var(--sx) 100% no-repeat, #646464;
+}
+
+/*ms*/
+input[type=range].custom-range::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].custom-range::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].custom-range::-ms-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background: #FFCF7A;
+  border: none;
+  box-shadow: none;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+input[type=range].custom-range::-ms-track {
+  height: 2px;
+  border-radius: 0;
+  background: #646464;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type=range].custom-range.slider-progress::-ms-fill-lower {
+  height: 2px;
+  border-radius: 0px 0 0 0px;
+  margin: -undefined 0 -undefined -undefined;
+  background: #FFCF7A;
+  border: none;
+  border-right-width: 0;
+}
