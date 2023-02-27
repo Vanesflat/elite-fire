@@ -27,19 +27,19 @@
             <ul class="menu__list">
 
               <li class="menu__item">
-                <a class="menu__link" href="#">продукция</a>
+                <a class="menu__link" href="#info">продукция</a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link" href="#">опыт</a>
+                <a class="menu__link" href="#experience">опыт</a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link" href="#">конструктор</a>
+                <a class="menu__link" href="#constructor">конструктор</a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link" href="#">контакты</a>
+                <a class="menu__link" href="#contact">контакты</a>
               </li>
 
               <li class="menu__item menu__item--phone">
@@ -170,7 +170,7 @@
 
       <!-- end refueling -->
 
-      <section class="info">
+      <section class="info" id="info">
         <div class="container">
 
           <div class="info__top">
@@ -315,7 +315,7 @@
 
       <!-- end info -->
 
-      <section class="experience">
+      <section class="experience" id="experience">
         <div class="container">
 
           <div class="experience__box">
@@ -352,10 +352,196 @@
         </div>
       </section>
 
+      <!-- end experience -->
+
+      <section class="constructor" id="constructor">
+        <div class="container">
+
+          <h2 class="constructor__title title">вы автор вашего камина</h2>
+
+          <form class="constructor-form" action="#" method="post" autocomplete="off">
+
+            <fieldset class="constructor-form__img">
+              <img src="images/constructor/fireplace.png" alt="Камин">
+            </fieldset>
+
+            <fieldset>
+              <label class="constructor-form__title" for="length">Выберите длину</label>
+              <div class="constructor-form__wrapper">
+                <span>0.5 м</span>
+                <input class="custom-range slider-progress" type="range" id="length" min="0.5" max="10" step="0.5"
+                  value="6.5">
+                <span>10 м</span>
+              </div>
+
+              <div class="slider">
+                <p class="constructor-form__title">Лицевая панель</p>
+
+                <div class="slider__control">
+                  <button class="slider__btn slider__btn--prev"></button>
+
+                  <img class="slider__img" src="images/constructor/front-panel.png"
+                    alt="Демонстрация выбранной лицевой панели">
+
+                  <button class="slider__btn slider__btn--next"></button>
+                </div>
+
+                <div class="slider__pagination">
+                  <a class="slider__link slider__link--active" href="#"></a>
+                  <a class="slider__link" href="#"></a>
+                  <a class="slider__link" href="#"></a>
+                  <a class="slider__link" href="#"></a>
+                </div>
+              </div>
+
+              <p class="constructor-form__title">дополнительные функции</p>
+              <div class="constructor-form__wrapper">
+
+                <ul class="constructor-form__list">
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="child-protection" checked>
+                    <label for="child-protection">Защита от детей</label>
+                  </li>
+
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="wi-fi">
+                    <label for="wi-fi">Wi-Fi</label>
+                  </li>
+
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="child-protection-1">
+                    <label for="child-protection-1">Защита от детей</label>
+                  </li>
+
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="wi-fi-1">
+                    <label for="wi-fi-1">Wi-Fi</label>
+                  </li>
+                </ul>
+
+                <ul class="constructor-form__list">
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="child-protection-2">
+                    <label for="child-protection-2">Защита от детей</label>
+                  </li>
+
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="wi-fi-2">
+                    <label for="wi-fi-2">Wi-Fi</label>
+                  </li>
+
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="child-protection-3" checked>
+                    <label for="child-protection-3">Защита от детей</label>
+                  </li>
+
+                  <li class="constructor-form__item">
+                    <input type="checkbox" id="wi-fi-3">
+                    <label for="wi-fi-3">Wi-Fi</label>
+                  </li>
+                </ul>
+
+              </div>
+            </fieldset>
+
+            <fieldset class="constructor-form__bottom">
+              <div class="constructor-form__group">
+                <label class="constructor-form__title">длина</label>
+                <input class="custom-range__output" type="text" value="6.5 м" readonly>
+              </div>
+
+              <div class="constructor-form__group">
+                <label class="constructor-form__title" for="">лицевая панель</label>
+                <input type="color" value="#B8542A">
+              </div>
+            </fieldset>
+
+            <fieldset class="constructor-form__bottom constructor-form__bottom--price">
+              <div class="constructor-form__group">
+                <label class="constructor-form__title" for="">стоимость</label>
+                <input type="number" value="99000" readonly><span>₽</span>
+              </div>
+
+              <button class="constructor-form__btn btn" type="submit">
+                <p class="btn__text">Оставить заявку</p>
+              </button>
+            </fieldset>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- end constructor -->
+
+      <section class="contact" id="contact">
+        <div class="container">
+
+          <h2 class="contact__title title">связаться с нами</h2>
+
+          <div class="contact__wrapper">
+
+            <ul class="contact__list">
+              <li class="contact__item">
+                <p class="contact__name">WhatsApp</p>
+                <a class="contact__link" href="tel:+79113064144">+7911 306 4144</a>
+              </li>
+
+              <li class="contact__item">
+                <p class="contact__name">Телеграмм</p>
+                <a class="contact__link" href="#">@elite_fire</a>
+              </li>
+            </ul>
+
+            <ul class="contact__list">
+              <li class="contact__item">
+                <p class="contact__name">Почта</p>
+                <a class="contact__link contact__link--mail" href="mailto:info@elite-fire.ru">info@elite-fire.ru</a>
+              </li>
+
+              <li class="contact__item">
+                <p class="contact__name">Наш адрес</p>
+                <a class="contact__link" href="#">Россия, г. Москва,
+                  Варшавское шоссе, 170 г
+                </a>
+              </li>
+            </ul>
+
+            <ul class="contact__list contact__list--right">
+              <li class="contact__item">
+                <p class="contact__name">Телефон</p>
+                <p class="contact__phone">8 911 306 4144</p>
+              </li>
+
+              <button class="contact__btn">Связаться с менеджером</button>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- end contact -->
+
     </main>
 
     <footer class="footer">
+      <div class="container">
 
+        <div class="footer__wrapper">
+
+          <p class="footer__logo logo" href="#">Elite Fire</p>
+
+          <div class="footer__info">
+            <p class="footer__text">2020-2021</p>
+            <p class="footer__text">ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”</p>
+          </div>
+
+          <a class="footer__link" href="#">Пользовательское соглашение</a>
+
+        </div>
+
+      </div>
     </footer>
 
   </div>
