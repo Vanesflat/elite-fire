@@ -1,0 +1,76 @@
+.contact {
+  padding: 72px 0 89px;
+  background-color: $black;
+  border-bottom: 1px solid #232323;
+
+  .contact__title {
+    margin-bottom: 71px;
+    text-align: left;
+    background: linear-gradient(183deg, #FFFFFF 31.8%, rgba(255, 255, 255, 0) 87.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -text-fill-color: transparent;
+  }
+
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    &--right {
+      justify-self: end;
+    }
+  }
+
+  .contact__name {
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: $ligth-grey;
+  }
+
+  .contact__link {
+    display: inline-block;
+    max-width: 300px;
+    font-size: 22px;
+    font-weight: 300;
+    transition: all .3s ease;
+
+    &--mail {
+      color: $yellow;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  .contact__phone {
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  .contact__btn {
+    width: 279px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid $yellow;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $black;
+      background-color: $yellow;
+    }
+  }
+}

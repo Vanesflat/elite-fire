@@ -1,0 +1,29 @@
+.footer {
+  padding: 13px 0 18px;
+  background-color: $black;
+  color: $grey;
+
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: 207px 1fr 1fr;
+    align-items: center;
+  }
+
+  .footer__logo {
+    color: $white;
+  }
+
+  .footer__info {
+    display: flex;
+    gap: 47px;
+  }
+
+  .footer__link {
+    justify-self: end;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
