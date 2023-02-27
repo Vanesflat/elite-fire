@@ -1,0 +1,46 @@
+.slider {
+  margin: 15px 0;
+  max-width: 330px;
+
+  .slider__control {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 18px;
+  }
+
+  .slider__btn {
+    width: 18px;
+    height: 18px;
+    transition: all .5s ease-in-out;
+
+    &--prev {
+      background: url(../images/info/btn-prev.svg);
+    }
+
+    &--next {
+      background: url(../images/info/btn-next.svg);
+    }
+
+    &:hover {
+      background-color: $lighten-white;
+    }
+  }
+
+  .slider__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .slider__link {
+    display: inline-block;
+    width: 9px;
+    height: 1px;
+    background-color: #464239;
+
+    &--active {
+      background-color: $yellow;
+    }
+  }
+}
